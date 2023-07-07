@@ -1,0 +1,106 @@
+[debug] [2023-07-07T22:28:30.824Z] ----------------------------------------------------------------------
+[debug] [2023-07-07T22:28:30.836Z] Command:       /home/questy/.nvm/versions/node/v20.0.0/bin/node /home/questy/.nvm/versions/node/v20.0.0/bin/firebase init hosting
+[debug] [2023-07-07T22:28:30.837Z] CLI Version:   12.4.2
+[debug] [2023-07-07T22:28:30.838Z] Platform:      linux
+[debug] [2023-07-07T22:28:30.839Z] Node Version:  v20.0.0
+[debug] [2023-07-07T22:28:30.840Z] Time:          Fri Jul 07 2023 18:28:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-07-07T22:28:30.840Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-07T22:28:30.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-07T22:28:30.948Z] > authorizing via signed-in user (olaomansur@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/questy/my
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-07T22:28:30.954Z] Using project from CLI flag: chatapp-a9809
+[debug] [2023-07-07T22:28:30.956Z] > refreshing access token with scopes: []
+[debug] [2023-07-07T22:28:30.959Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-07T22:28:30.960Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-07T22:28:38.363Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-07T22:28:38.363Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-07T22:28:38.373Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 [none]
+[debug] [2023-07-07T22:28:40.012Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 (original: request to https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 failed, reason: )
+[debug] [2023-07-07T22:28:45.020Z] Error: Timed out.
+    at Timeout._onTimeout (/home/questy/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/utils.js:254:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-07T22:33:42.425Z] ----------------------------------------------------------------------
+[debug] [2023-07-07T22:33:42.433Z] Command:       /home/questy/.nvm/versions/node/v20.0.0/bin/node /home/questy/.nvm/versions/node/v20.0.0/bin/firebase deploy
+[debug] [2023-07-07T22:33:42.433Z] CLI Version:   12.4.2
+[debug] [2023-07-07T22:33:42.433Z] Platform:      linux
+[debug] [2023-07-07T22:33:42.434Z] Node Version:  v20.0.0
+[debug] [2023-07-07T22:33:42.434Z] Time:          Fri Jul 07 2023 18:33:42 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-07-07T22:33:42.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-07T22:33:42.531Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-07T22:33:42.532Z] > authorizing via signed-in user (olaomansur@gmail.com)
+[debug] [2023-07-07T22:33:42.532Z] [iam] checking project chatapp-a9809 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-07T22:33:42.534Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-a9809:testIamPermissions [none]
+[debug] [2023-07-07T22:33:42.535Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-a9809:testIamPermissions x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:33:42.535Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-a9809:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-07T22:33:50.204Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-a9809:testIamPermissions 200
+[debug] [2023-07-07T22:33:50.204Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-a9809:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-07T22:33:50.205Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chatapp-a9809/serviceAccounts/chatapp-a9809@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-07-07T22:33:50.205Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chatapp-a9809/serviceAccounts/chatapp-a9809@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-07T22:33:57.155Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chatapp-a9809/serviceAccounts/chatapp-a9809@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-07-07T22:33:57.156Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chatapp-a9809/serviceAccounts/chatapp-a9809@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-07T22:33:57.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 [none]
+[debug] [2023-07-07T22:34:00.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 200
+[debug] [2023-07-07T22:34:00.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 {"projectId":"chatapp-a9809","projectNumber":"1052369672230","displayName":"chatApp","name":"projects/chatapp-a9809","resources":{"hostingSite":"chatapp-a9809"},"state":"ACTIVE","etag":"1_2866b9f2-1ef8-40b6-ad2c-aac0b88f3b3c"}
+[info] 
+[info] === Deploying to 'chatapp-a9809'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-07-07T22:34:00.335Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 [none]
+[debug] [2023-07-07T22:34:00.734Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 200
+[debug] [2023-07-07T22:34:00.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatapp-a9809 {"projectId":"chatapp-a9809","projectNumber":"1052369672230","displayName":"chatApp","name":"projects/chatapp-a9809","resources":{"hostingSite":"chatapp-a9809"},"state":"ACTIVE","etag":"1_2866b9f2-1ef8-40b6-ad2c-aac0b88f3b3c"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-07-07T22:34:00.741Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-07T22:34:00.741Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:34:00.743Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-07T22:34:00.743Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:34:00.745Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudbuild.googleapis.com [none]
+[debug] [2023-07-07T22:34:00.745Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudbuild.googleapis.com x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:34:00.747Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com [none]
+[debug] [2023-07-07T22:34:00.747Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:34:06.163Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-07T22:34:06.164Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-07T22:34:06.166Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-07T22:34:06.167Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-07-07T22:34:06.181Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com 200
+[debug] [2023-07-07T22:34:06.181Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com [omitted]
+[warn] ⚠  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2023-07-07T22:34:06.182Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2023-07-07T22:34:06.182Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/chatapp-a9809
+[debug] [2023-07-07T22:34:07.463Z] Error: Timed out.
+    at Timeout._onTimeout (/home/questy/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/utils.js:254:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-07T22:34:07.630Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com:enable 400
+[debug] [2023-07-07T22:34:07.630Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chatapp-a9809/services/artifactregistry.googleapis.com:enable [omitted]
